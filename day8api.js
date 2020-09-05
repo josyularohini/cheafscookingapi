@@ -4,7 +4,7 @@ const port = 8900
 const bodyParser=require('body-parser');
 const mongo = require('mongodb');
 const MongoClient=mongo.MongoClient;
-const mongourl="mongodb://localhost:27017";
+const mongourl="mongodb+srv://<username>:<password>@cluster0.lepud.mongodb.net/<dbname>?retryWrites=true&w=majority";
 var cors = require('cors');
 let db;
 app.use(cors());
